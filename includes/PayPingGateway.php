@@ -36,7 +36,7 @@ class PayPingClassiPress extends APP_Gateway{
                 'payerIdentity'  => '',
                 'returnUrl'      => $callbackURL,
                 'Description'    => $description,
-                'clientRefId'    => $OrderID,
+                'clientRefId'    => (string) $OrderID,
             );
 
             $args = array(
